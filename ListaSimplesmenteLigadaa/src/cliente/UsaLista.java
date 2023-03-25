@@ -23,7 +23,27 @@ public class UsaLista {
         lista.inserir(new Contato("Henrick","123-444"));
         lista.inserir(new Contato("Igor","125-555"));
         
-        lista.exibir();
+        //lista.exibir();
+        
+        /**Object obj = lista.pesquisarId(4);
+        if(obj != null){
+            System.out.println(obj);
+        }else{
+            System.out.println("Tem não");
+        }
+        **/
+        
+        lista.inserirProduto(new Produto("Água", "bebidas",2.50));
+        lista.inserirProduto(new Produto("Bolacaha", "alimentos",100));
+        lista.inserirProduto(new Produto("Salsicha", "alimentos",22.75));
+        
+        lista.exibirProduto();
+        
+        System.out.println("Descontos????????????");
+        
+        lista.descontoProduto("alimentos", 10);
+        
+        lista.exibirProduto();
         
     }
     
